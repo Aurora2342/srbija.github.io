@@ -39,3 +39,10 @@ body {
 .links a:hover {
   background: rgba(0, 0, 0, 0.5);
 }
+
+.username {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.8);
+}
