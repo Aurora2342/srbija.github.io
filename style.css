@@ -6,26 +6,18 @@
 }
 
 body {
-  background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
-  color: white;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
 }
 
 .container {
   width: 90%;
   max-width: 400px;
-  text-align: center;
-}
-
-.profile img {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  border: 3px solid #00ffcc;
-  margin-bottom: 20px;
 }
 
 .links {
@@ -36,22 +28,14 @@ body {
 
 .links a {
   text-decoration: none;
-  background: #1f1f1f;
-  padding: 12px;
-  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.35);
+  padding: 14px;
+  border-radius: 8px;
   color: white;
-  transition: 0.3s;
-  border: 1px solid #333;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
 }
 
 .links a:hover {
-  background: #00ffcc;
-  color: black;
-  transform: scale(1.05);
-}
-
-footer {
-  margin-top: 20px;
-  color: #666;
-  font-size: 12px;
+  background: rgba(0, 0, 0, 0.5);
 }
