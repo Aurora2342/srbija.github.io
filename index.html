@@ -1,51 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shahed update maps</title>
+  <meta charset="UTF-8">
+  <title>Shahed update maps</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f0f0f;
+      color: white;
+    }
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+    .map {
+      width: 100%;
+      height: 80vh;
+    }
 
-body{
-    background:#000;
-    color:#fff;
-    font-family:Arial, sans-serif;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    min-height:100vh;
-}
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
 
-.container{
-    text-align:center;
-}
-
-img{
-    max-width:95%;
-    max-height:80vh;
-    border-radius:12px;
-    box-shadow:0 0 30px rgba(255,255,255,0.15);
-}
-
-p{
-    margin-top:12px;
-    font-size:14px;
-    color:#aaa;
-}
-</style>
+    .text {
+      padding: 20px;
+      text-align: center;
+      font-size: 18px;
+      background: #151515;
+    }
+  </style>
 </head>
 <body>
 
-<div class="container">
-    <img src="photo.jpg" alt="Photo">
+<div class="map">
+  <iframe 
+    src="<iframe style="width: 100%; height: 300px; border: 0;" allowfullscreen allow="geolocation" src="//umap.openstreetmap.fr/sr/map/shahed-maps-update-ukraine_1417428?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=none&captionBar=false&captionMenus=true"></iframe><p><a href="//umap.openstreetmap.fr/sr/map/shahed-maps-update-ukraine_1417428?scaleControl=false&miniMap=false&scrollWheelZoom=true&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=none&captionBar=false&captionMenus=true">Увећана слика</a></p>">
+  </iframe>
+</div>
 
-    <p>Every evening from 21.30 UTC / 22.30 Moscow time, the map will be updated,sometimes there will be updates earlier.</p>
+<div class="text">
+  Every evening from 21.30 UTC / 22.30 Moscow time, the map will be updated,sometimes there will be updates earlier.
 </div>
 
 </body>
