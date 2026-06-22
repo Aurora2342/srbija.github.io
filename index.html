@@ -2,43 +2,47 @@
 <html lang="sr">
 <head>
   <meta charset="UTF-8">
-  <title>Shahed update maps</title>
+  <title>uMap mapa</title>
+
   <style>
     body {
       margin: 0;
+      background: #0b0b0f;
       font-family: Arial, sans-serif;
-      background: #0f0f0f;
-      color: white;
     }
 
     .map {
       width: 100%;
-      height: 80vh;
+      height: 90vh;
     }
 
     iframe {
       width: 100%;
       height: 100%;
-      border: none;
+      border: 0;
     }
 
-    .text {
-      padding: 20px;
+    .info {
+      padding: 15px;
       text-align: center;
-      font-size: 18px;
-      background: #151515;
+      background: #12121a;
+      color: white;
+      border-top: 1px solid #222;
     }
   </style>
 </head>
+
 <body>
 
 <div class="map">
   <iframe 
-    src="<iframe style="width: 100%; height: 300px; border: 0;" allowfullscreen allow="geolocation" src="//umap.openstreetmap.fr/sr/map/shahed-maps-update-ukraine_1417428?scaleControl=true&miniMap=false&scrollWheelZoom=true&zoomControl=true&editMode=disabled&moreControl=false&searchControl=false&tilelayersControl=true&embedControl=null&datalayersControl=false&onLoadPanel=none&captionBar=true&captionMenus=false&datalayers=14169e0f-118f-4793-adef-fbcc8d0f237d%2C61bf767d-015a-4586-a353-3ff88de2087c&homeControl=false&fullscreenControl=true&captionControl=false&locateControl=false&measureControl=false&printControl=false"></iframe>">
+    allowfullscreen 
+    allow="geolocation"
+    src="https://umap.openstreetmap.fr/sr/map/shahed-maps-update-ukraine_1417428">
   </iframe>
 </div>
 
-<div class="text">
+<div class="info">
   Every evening from 21.30 UTC / 22.30 Moscow time, the map will be updated,sometimes there will be updates earlier.
 </div>
 
