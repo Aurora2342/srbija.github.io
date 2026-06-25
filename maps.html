@@ -1,33 +1,46 @@
-<div style="width: 100%; max-width: 700px; margin: 40px auto; text-align: center; font-family: Arial, sans-serif;">
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Massa</title>
 
-  <!-- NASLOV -->
-  <h2 style="margin-bottom: 8px; font-size: 24px;">
-    soon
-  </h2>
+  <style>
+    body {
+      margin: 0;
+      background: #f4f4f4;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
 
-  <!-- OPIS -->
-  <p style="margin-bottom: 15px; color: #555; font-size: 14px;">
-    soon
-  </p>
+    .map-box {
+      width: 100%;
+      max-width: 800px;
+      margin: 20px;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    }
 
-  <!-- MAPA -->
-  <div style="border-radius: 14px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.25);">
+    iframe {
+      width: 100%;
+      height: 450px;
+      border: 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="map-box">
     <iframe 
       src="https://yandex.com/map-widget/v1/?um=constructor%3Ab56f55d4a7eb4a3826daf14d99e197c84cf2bc44492bc953138e3dd2ad2eee46&source=constructor"
-      width="100%" 
-      height="400" 
-      frameborder="0"
-      style="border:0;"
       loading="lazy">
     </iframe>
   </div>
 
-  <!-- DUGME -->
-  <div style="margin-top: 15px;">
-    <a href="https://yandex.com/maps/" target="_blank"
-       style="display: inline-block; padding: 10px 16px; background: #ffcc00; color: #000; text-decoration: none; border-radius: 8px; font-weight: bold;">
-      Otvori u Yandex Maps
-    </a>
-  </div>
-
-</div>
+</body>
+</html>
