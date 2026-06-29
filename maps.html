@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shahed maps update</title>
+  <title>Massa</title>
 
   <style>
     body {
@@ -11,6 +11,7 @@
       background: #f4f4f4;
       font-family: Arial, sans-serif;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       min-height: 100vh;
@@ -26,19 +27,32 @@
       box-shadow: 0 10px 30px rgba(0,0,0,.25);
       background: #fff;
     }
+
+    .text-box {
+      width: 100%;
+      max-width: 900px;
+      margin: 10px 20px;
+      padding: 15px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+      font-size: 16px;
+      color: #333;
+    }
   </style>
 </head>
 
 <body>
 
-<div class="map-box">
-  <script
-    type="text/javascript"
-    charset="utf-8"
-    async
-    src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab56f55d4a7eb4a3826daf14d99e197c84cf2bc44492bc953138e3dd2ad2eee46&width=100%25&height=600&lang=en_US&scroll=true">
-  </script>
-</div>
+  <div class="map-box">
+    <script type="text/javascript" charset="utf-8" async 
+      src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab56f55d4a7eb4a3826daf14d99e197c84cf2bc44492bc953138e3dd2ad2eee46&amp;width=100%25&amp;height=600&amp;lang=en_US&amp;scroll=true">
+    </script>
+  </div>
+
+  <div class="text-box">
+    <p>Every evening from 21.30 UTC / 22.30 Moscow time, the map will be updated.</p>
+  </div>
 
 </body>
 </html>
