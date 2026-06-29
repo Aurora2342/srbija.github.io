@@ -18,29 +18,27 @@
 
     .map-box {
       width: 100%;
-      max-width: 800px;
+      max-width: 900px;
+      height: 600px;
       margin: 20px;
       border-radius: 14px;
       overflow: hidden;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
-    }
-
-    iframe {
-      width: 100%;
-      height: 450px;
-      border: 0;
+      box-shadow: 0 10px 30px rgba(0,0,0,.25);
+      background: #fff;
     }
   </style>
 </head>
 
 <body>
 
-  <div class="map-box">
-    <iframe 
-      src="https://yandex.com/map-widget/v1/?um=constructor%3Ab56f55d4a7eb4a3826daf14d99e197c84cf2bc44492bc953138e3dd2ad2eee46&source=constructor"
-      loading="lazy">
-    </iframe>
-  </div>
+<div class="map-box">
+  <script
+    type="text/javascript"
+    charset="utf-8"
+    async
+    src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab56f55d4a7eb4a3826daf14d99e197c84cf2bc44492bc953138e3dd2ad2eee46&width=100%25&height=600&lang=en_US&scroll=true">
+  </script>
+</div>
 
 </body>
 </html>
