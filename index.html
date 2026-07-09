@@ -1,58 +1,199 @@
 <!DOCTYPE html>
-<html lang="sr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shahed maps Update</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>45thBrigade</title>
 
-  <style>
-    body {
-      margin: 0;
-      background: #f4f4f4;
-      font-family: Arial, sans-serif;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:#fff;
+}
+
+header{
+    background:#111827;
+    padding:20px 10%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:1px solid #1f2937;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#60a5fa;
+}
+
+.hero{
+    text-align:center;
+    padding:100px 20px;
+}
+
+.hero h1{
+    font-size:56px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+    color:#cbd5e1;
+    max-width:700px;
+    margin:auto;
+}
+
+.buttons{
+    margin-top:40px;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 28px;
+    margin:10px;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#1d4ed8;
+}
+
+.section{
+    max-width:1100px;
+    margin:80px auto;
+    padding:0 20px;
+}
+
+.section h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:36px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#1e293b;
+    padding:30px;
+    border-radius:12px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h3{
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#cbd5e1;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    margin-top:60px;
+    border-top:1px solid #1f2937;
+    color:#94a3b8;
+}
+
+@media (max-width:768px){
+    header{
+        flex-direction:column;
+        gap:15px;
     }
 
-    .map-box {
-      width: 100%;
-      max-width: 900px;
-      height: 600px;
-      margin: 20px;
-      border-radius: 14px;
-      overflow: hidden;
-      box-shadow: 0 10px 30px rgba(0,0,0,.25);
-      background: #fff;
+    nav a{
+        margin:0 10px;
     }
 
-    .text-box {
-      width: 100%;
-      max-width: 900px;
-      margin: 10px 20px;
-      padding: 15px;
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.15);
-      font-size: 16px;
-      color: #333;
+    .hero h1{
+        font-size:42px;
     }
-  </style>
+
+    .hero p{
+        font-size:18px;
+    }
+}
+</style>
+
 </head>
-
 <body>
 
-  <div class="map-box">
-    <script type="text/javascript" charset="utf-8" async 
-      src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab56f55d4a7eb4a3826daf14d99e197c84cf2bc44492bc953138e3dd2ad2eee46&amp;width=100%25&amp;height=600&amp;lang=en_US&amp;scroll=true">
-    </script>
-  </div>
+<header>
+    <div class="logo">45thBrigade</div>
 
-  <div class="text-box">
-    <p>Every evening from 21.30 UTC / 22.30 Moscow time, the map will be updated.</p>
-  </div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="blog.html">Blog</a>
+        <a href="maps.html">Maps</a>
+        <a href="links.html">links</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>45thBrigade</h1>
+
+    <p>
+        Military maps, conflict updates, and open-source intelligence in one place.
+    </p>
+
+    <div class="buttons">
+        <a href="maps.html" class="btn">View Maps</a>
+        <a href="blog.html" class="btn">Read Blog</a>
+    </div>
+</section>
+
+<section class="section">
+
+    <h2>What You'll Find</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>🗺️ Maps</h3>
+            <p>Interactive maps covering military activity and important locations.</p>
+        </div>
+
+        <div class="card">
+            <h3>📰 Blog</h3>
+            <p>News, reports, and updates with detailed information.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+© 2026 45thBrigade. All rights reserved.
+</footer>
 
 </body>
 </html>
